@@ -1,9 +1,9 @@
 import React from 'react';
-import './App.css';
+import './css/App.css';
 
 function App() {
   return (
-    <div id="App">
+    <div className="App">
       <h1>Recipe Finder</h1>
       <p>New react app that allows users to search through recipes based on their category</p>
     </div>
