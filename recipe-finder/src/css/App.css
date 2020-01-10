@@ -1,3 +1,11 @@
 .App {
   text-align: center;
 }
+
+.header-image {
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  height: auto;
+}

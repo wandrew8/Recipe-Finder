@@ -1,13 +1,27 @@
-import React from 'react';
+import React , { Component } from 'react';
+import beef from './beef';
+import category from './categories';
+import NavbarComponent from './components/NavbarComponent';
+import Header from './components/Header';
 import './css/App.css';
 
-function App() {
+class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      categories: category,
+      beef: beef
+    }
+  }
+  
+  render() {
   return (
     <div className="App">
-      <h1>Recipe Finder</h1>
-      <p>New react app that allows users to search through recipes based on their category</p>
+      <NavbarComponent categories={this.state.categories} />
+      <Header beef={this.state.beef} />
     </div>
   );
+  }
 }
 
 export default App;
