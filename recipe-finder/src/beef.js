@@ -1,5 +1,6 @@
-const beef = {
-    beef1: {
+const beef = [
+   {
+    id: 0,
     "idMeal": "52952",
     "strMeal": "Beef Lo Mein",
     "strDrinkAlternate": null,
@@ -52,7 +53,8 @@ const beef = {
     "strSource": "https://sueandgambo.com/pages/beef-lo-mein",
     "dateModified": null
     },
-    beef2: {
+    {
+    id: 1,
     "idMeal": "52950",
     "strMeal": "Szechuan Beef",
     "strDrinkAlternate": null,
@@ -105,7 +107,8 @@ const beef = {
     "strSource": "https://sueandgambo.com/pages/szechuan-beef",
     "dateModified": null
     },
-    beef3: {
+    {
+    id: 2,
     "idMeal": "52803",
     "strMeal": "Beef Wellington",
     "strDrinkAlternate": null,
@@ -158,7 +161,8 @@ const beef = {
     "strSource": "http://www.goodtoknow.co.uk/recipes/164868/Gordon-Ramsay-s-beef-Wellington",
     "dateModified": null
     },
-    beef4: {
+    {
+    id: 3,
     "idMeal": "52834",
     "strMeal": "Beef stroganoff",
     "strDrinkAlternate": null,
@@ -211,7 +215,8 @@ const beef = {
     "strSource": "https://www.bbcgoodfood.com/recipes/beef-stroganoff",
     "dateModified": null
     },
-    beef5: {
+    {
+    id: 4,
     "idMeal": "52876",
     "strMeal": "Minced Beef Pie",
     "strDrinkAlternate": null,
@@ -264,7 +269,8 @@ const beef = {
     "strSource": "https://www.bbc.co.uk/food/recipes/mincedbeefpie_89198",
     "dateModified": null
     },
-    beef6: {
+    {
+    id: 5,
     "idMeal": "52904",
     "strMeal": "Beef Bourguignon",
     "strDrinkAlternate": null,
@@ -317,7 +323,8 @@ const beef = {
     "strSource": "https://www.bbcgoodfood.com/recipes/5032/beef-bourguignon",
     "dateModified": null
     },
-    beef7: {
+    {
+    id: 6,
     "idMeal": "52824",
     "strMeal": "Beef Sunday Roast",
     "strDrinkAlternate": null,
@@ -370,7 +377,8 @@ const beef = {
     "strSource": "https://www.bbcgoodfood.com/recipes/9020/best-yorkshire-puddings",
     "dateModified": null
     },
-    beef8: {
+    {
+    id: 7,
     "idMeal": "52873",
     "strMeal": "Beef Dumpling Stew",
     "strDrinkAlternate": null,
@@ -423,7 +431,8 @@ const beef = {
     "strSource": "https://www.bbc.co.uk/food/recipes/beefstewwithdumpling_87333",
     "dateModified": null
     },
-    beef9: {
+    {
+    id: 8,
     "idMeal": "52826",
     "strMeal": "Braised Beef Chilli",
     "strDrinkAlternate": null,
@@ -476,7 +485,8 @@ const beef = {
     "strSource": "http://www.telegraph.co.uk/food-and-drink/recipes/braised-beef-chilli-con-carne/",
     "dateModified": null
     },
-    beef10: {
+    {
+    id: 9,
     "idMeal": "52827",
     "strMeal": "Massaman Beef curry",
     "strDrinkAlternate": null,
@@ -529,7 +539,8 @@ const beef = {
     "strSource": "https://www.bbcgoodfood.com/recipes/420631/beef-massaman-curry",
     "dateModified": null
     },
-    beef11: {
+    {
+    id: 10,
     "idMeal": "52878",
     "strMeal": "Beef and Oyster pie",
     "strDrinkAlternate": null,
@@ -582,7 +593,8 @@ const beef = {
     "strSource": "https://www.bbc.co.uk/food/recipes/beef_and_oyster_pie_65230",
     "dateModified": null
     },
-    beef12: {
+    {
+    id: 11,
     "idMeal": "52874",
     "strMeal": "Beef and Mustard Pie",
     "strDrinkAlternate": null,
@@ -634,8 +646,8 @@ const beef = {
     "strMeasure20": "",
     "strSource": "https://www.bbc.co.uk/food/recipes/beef_and_mustard_pie_58002",
     "dateModified": null
-    },
+    }
     
-}
+]
 
 export default beef;
