@@ -5,11 +5,9 @@ A react application that uses data from TheMealDB api to allow users to search r
 ## Wireframe and UI Design
 This project is still in the initial stages of development. Here are some preliminary wireframes of what the final project should look like. Wireframes were built using AdobeXd. 
 
-![Wireframe Home Page](../src/css/images/wireframe/home.png)
+![Wireframe Home Page](https://res.cloudinary.com/dcokaa0ia/image/upload/v1578684863/olafgo/category_nlbo3f.png)
 
-![Wireframe Home Page](recipe-finder\src\css\images\wireframe\category.PNG)
-
-![Wireframe Home Page](recipe-finder\src\css\images\wireframe\recipe.PNG)
+![Wireframe Recipe Modal Page](https://res.cloudinary.com/dcokaa0ia/image/upload/v1578684935/recipe_foihp1.png)
 
 ## Contact
 
