@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link } from 'react-router-dom';
 
 export class NavbarComponent extends Component {
     constructor(props) {
@@ -8,8 +9,7 @@ export class NavbarComponent extends Component {
     render() {
         return (
             <nav className="navbar navbar-expand-lg navbar-dark primary-color">
-
-            <a className="navbar-brand" href="#">Recipe Finder</a>
+            <Link className="navbar-brand" href="#" to="/home">Recipe Finder</Link>
           
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
               aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,42 +20,28 @@ export class NavbarComponent extends Component {
           
               <ul className="navbar-nav mr-auto">
                 <li className="nav-item active">
-                  <a className="nav-link" href="#">Home
+                  <Link className="nav-link" href="#" to="/home">Home
                     <span className="sr-only">(current)</span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Saved Recipes</a>
+                  <Link className="nav-link" href="#" to="/saved" >Saved Recipes</Link>
                 </li>
           
                 <li className="nav-item dropdown">
                   <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">Categories</a>
                   <div className="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                    <a className="dropdown-item" href="#">Chicken</a>
-                    <a className="dropdown-item" href="#">Beef</a>
-                    <a className="dropdown-item" href="#">Fish and Seafood</a>
-                    <a className="dropdown-item" href="#">Vegetarian and Vegan</a>
-                    <a className="dropdown-item" href="#">Pasta</a>
-                    <a className="dropdown-item" href="#">Desserts</a>
+                    <Link className="dropdown-item" href="#" to="/category/chicken">Chicken</Link>
+                    <Link className="dropdown-item" href="#" to="/category/beef">Beef</Link>
+                    <Link className="dropdown-item" href="#" to="/category/fish">Fish and Seafood</Link>
+                    <Link className="dropdown-item" href="#" to="/category/vegetarian">Vegetarian and Vegan</Link>
+                    <Link className="dropdown-item" href="#" to="/category/pasta">Pasta</Link>
+                    <Link className="dropdown-item" href="#" to="/category/desserts">Desserts</Link>
                   </div>
                 </li>
           
               </ul>
-          
-              <form className="form-inline">
-                <div className="md-form my-0">
-                <input placeholder="Search by category" list="categories"/>
-                    <datalist id="categories">
-                    <option value="Chicken"/>
-                    <option value="Beef"/>
-                    <option value="Fish and Seafood"/>
-                    <option value="Vegetarian and Vegan"/>
-                    <option value="Pasta"/>
-                    <option value="Desserts"/>
-                    </datalist>                
-                </div>
-              </form>
             </div>
           
           </nav>

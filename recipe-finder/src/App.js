@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-d
 import beef from './beef';
 import category from './categories';
 import NavbarComponent from './components/NavbarComponent';
-import Header from './components/Header';
 import HomePage from './components/Homepage';
 import SavedPage from './components/SavedPage';
 import CategoryPage from './components/CategoryPage'
