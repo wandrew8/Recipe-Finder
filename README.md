@@ -7,9 +7,9 @@ This project is still in the initial stages of development. Here are some prelim
 
 ![Wireframe Home Page](../src/css/images/wireframe/home.png)
 
-![Wireframe Home Page](./src/css/images/wireframe/category.png)
+![Wireframe Home Page](recipe-finder\src\css\images\wireframe\category.PNG)
 
-![Wireframe Home Page](css/images/wireframe/recipe.png)
+![Wireframe Home Page](recipe-finder\src\css\images\wireframe\recipe.PNG)
 
 ## Contact
 
