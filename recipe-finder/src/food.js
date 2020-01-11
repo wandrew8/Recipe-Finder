@@ -1321,7 +1321,7 @@ const FOOD = [
         },
         {
             id: 0,
-            type: "dessert",
+            type: "desserts",
             "idMeal": "52901",
             "strMeal": "Rock Cakes",
             "strDrinkAlternate": null,
@@ -1376,7 +1376,7 @@ const FOOD = [
             },
             {
                 id: 1,
-                type: "dessert",
+                type: "desserts",
             "idMeal": "52897",
             "strMeal": "Carrot Cake",
             "strDrinkAlternate": null,
@@ -1431,7 +1431,7 @@ const FOOD = [
             },
             {
                 id: 2,
-                type: "dessert",
+                type: "desserts",
             "idMeal": "52899",
             "strMeal": "Dundee cake",
             "strDrinkAlternate": null,
@@ -1486,7 +1486,7 @@ const FOOD = [
             },
             {
                 id: 3,
-                type: "dessert",
+                type: "desserts",
             "idMeal": "52902",
             "strMeal": "Parkin Cake",
             "strDrinkAlternate": null,
@@ -1541,7 +1541,7 @@ const FOOD = [
             },
             {
                 id: 4,
-                type: "dessert",
+                type: "desserts",
             "idMeal": "52888",
             "strMeal": "Eccles Cakes",
             "strDrinkAlternate": null,
@@ -1596,7 +1596,7 @@ const FOOD = [
             },
             {
                 id: 5,
-                type: "dessert",
+                type: "desserts",
             "idMeal": "52900",
             "strMeal": "Madeira Cake",
             "strDrinkAlternate": null,
@@ -1651,7 +1651,7 @@ const FOOD = [
             },
             {
                 id: 6,
-                type: "dessert",
+                type: "desserts",
             "idMeal": "52990",
             "strMeal": "Christmas cake",
             "strDrinkAlternate": null,
@@ -1706,7 +1706,7 @@ const FOOD = [
             },
             {
                 id: 7,
-                type: "dessert",
+                type: "desserts",
                 "idMeal": "52894",
                 "strMeal": "Battenberg Cake",
                 "strDrinkAlternate": null,
@@ -1761,7 +1761,7 @@ const FOOD = [
                 },
                 {
                     id: 8,
-                    type: "dessert",
+                    type: "desserts",
                 "idMeal": "52858",
                 "strMeal": "New York cheesecake",
                 "strDrinkAlternate": null,
@@ -1816,7 +1816,7 @@ const FOOD = [
                 },
                 {
                     id: 9,
-                    type: "dessert",
+                    type: "desserts",
                 "idMeal": "52794",
                 "strMeal": "Vegan Chocolate Cake",
                 "strDrinkAlternate": null,
@@ -1871,7 +1871,7 @@ const FOOD = [
                 },
                 {
                     id: 10,
-                    type: "dessert",
+                    type: "desserts",
                 "idMeal": "52970",
                 "strMeal": "Tunisian Orange Cake",
                 "strDrinkAlternate": null,
@@ -1926,7 +1926,7 @@ const FOOD = [
                 },
                 {
                     id: 11,
-                    type: "dessert",
+                    type: "desserts",
                 "idMeal": "52833",
                 "strMeal": "Salted Caramel Cheescake",
                 "strDrinkAlternate": null,
