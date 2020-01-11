@@ -22,7 +22,8 @@ class App extends Component {
     const CategoryType = ({ match }) => {
       return (
         <CategoryPage 
-        food={this.state.food.filter(foodItem => foodItem.type === match.params.category)} 
+        food={this.state.food.filter(foodItem => foodItem.type === match.params.category)}
+        category={this.state.categories.filter(category => category.type === match.params.category)} 
         />
       )
     }
