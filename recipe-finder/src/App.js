@@ -33,7 +33,7 @@ class App extends Component {
       <div className="App">
       <NavbarComponent categories={this.state.categories} />
       <Switch>
-        <Route path="/home" component={HomePage} />
+        <Route path="/home" render={() => <HomePage category={this.state.categories}/>} />
         <Route path="/category/:category" component={CategoryType} />} />
         <Route exact path="/saved" component={SavedPage} />
         <Redirect to="/home" />

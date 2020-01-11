@@ -1,16 +1,16 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import ImageLink from './ImageLink';
+
 
 export class Homepage extends Component {
     render() {
         return (
             <div class="jumbotron card card-image" >
-                <div class="text-white text-center py-5 px-4">
+                <div class="text-center py-5 px-4">
                     <div>
-                    <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>Create your beautiful website with MDBootstrap</strong></h2>
-                    <p class="mx-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
-                        optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos. Odit sed qui, dolorum!
-                    </p>
-                    <a class="btn btn-outline-white btn-md"><i class="fas fa-clone left"></i> View project</a>
+                    <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>Popular Recipe Categories</strong></h2>
+                    <p class="mx-5 mb-5">Find delicious recipes to enjoy with your whole family!</p>
+                    <ImageLink category={this.props.category} />
                     </div>
                 </div>
             </div>
