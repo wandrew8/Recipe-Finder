@@ -5,17 +5,19 @@ import {Link } from 'react-router-dom';
 function RenderImages({category}) {
     const categories = category.map(categoryType => {
         return (
-            <Link to={`/category/${categoryType.type}`} href="#">
-                <p>{categoryType.strCategory}</p>
-            </Link>
+            <div className="col-6 col-sm-4 col-md-2">
+                <Link to={`/category/${categoryType.type}`} href="#">
+                    <img className="image-links" src={categoryType.strCategoryThumb} alt={categoryType.type} />
+                    <p>{categoryType.strCategory}</p>
+                </Link>
+            </div>
         )
     })
     if ({category}) {
         return (
-            <div className="col-md-5 m-1">
-                <h4>Categories</h4>
+            <React.Fragment>
                 {categories}
-            </div>
+            </React.Fragment>
         )
     } else {
         return (
@@ -26,8 +28,10 @@ function RenderImages({category}) {
 
 function ImageLink(props) {
     return (
-        <div>
-           <RenderImages category={props.category} />
+        <div className="container">
+            <div className="row">
+                <RenderImages category={props.category} />
+            </div>
         </div>
     )
 }

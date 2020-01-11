@@ -2,7 +2,13 @@
   text-align: center;
 }
 
-.header-image {}
+.image-links {
+  max-width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: solid black 2px;
+  border-radius: 50%;
+}
 
 .site-footer {
   background-color: #007bff;
@@ -11,4 +17,8 @@
 
 .site-footer a, .site-footer h5, .site-footer p {
   color: #fff;
+}
+
+.saved-recipes {
+  min-height: 80vh;
 }

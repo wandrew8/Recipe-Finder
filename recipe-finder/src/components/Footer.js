@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <footer className="site-footer">
         <div className="container">
-            <div className="row my-3">             
+            <div className="row my-5">             
                 <div className="col-md-5">
                     <h5>Food Categories</h5>
                     <div className="row">
@@ -26,10 +26,11 @@ export default function Footer() {
                     <p>Search our catalog of delicious recipes suited for you and the whole family. Save your favorite recipes to reuse again and again!</p>
                 </div>
                 <div className="col-md col-sm-6">
-                    <h5>Directory</h5>
+                    <h5>Navigation</h5>
                     <ul className="list-unstyled">
                         <li><Link to="/home" href="#">Home</Link></li>
                         <li><Link to="/saved" href="#">Saved Recipes</Link></li>
+                        <li><a href="http://andrewjohnweiss.com" target="_blank">More of my work</a></li>
                     </ul>
                 </div>
             </div>
