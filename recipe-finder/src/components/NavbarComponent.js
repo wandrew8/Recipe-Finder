@@ -9,7 +9,7 @@ export class NavbarComponent extends Component {
     render() {
         return (
             <nav className="navbar navbar-expand-lg navbar-dark primary-color">
-            <Link className="navbar-brand" href="#" to="/home">Recipe Finder</Link>
+            <Link className="navbar-brand" href="#" to="/home"><p><strong>Recipe<span><i className="mx-1 fas fa-wave-square"></i></span>Finder</strong></p></Link>
           
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
               aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">

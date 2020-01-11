@@ -6,6 +6,7 @@ import NavbarComponent from './components/NavbarComponent';
 import HomePage from './components/Homepage';
 import SavedPage from './components/SavedPage';
 import CategoryPage from './components/CategoryPage'
+import Footer from './components/Footer';
 import './css/App.css';
 
 class App extends Component {
@@ -29,6 +30,7 @@ class App extends Component {
         <Route exact path="/saved" component={SavedPage} />
         <Redirect to="/home" />
       </Switch>
+      <Footer />
       </div>
     </Router>
   );

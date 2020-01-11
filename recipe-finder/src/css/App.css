@@ -9,3 +9,12 @@
   left: 0;
   height: auto;
 }
+
+.site-footer {
+  background-color: #007bff;
+  padding: 20px 0;
+}
+
+.site-footer a, .site-footer h5, .site-footer p {
+  color: #fff;
+}
