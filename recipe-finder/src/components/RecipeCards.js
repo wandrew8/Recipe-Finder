@@ -1,23 +1,43 @@
 import React, { Component } from 'react'
 
-export class RecipeCards extends Component {
-    render() {
-        return (
-            <div class="card">
-                <div class="view overlay">
-                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2821%29.jpg" alt="Card image cap" />
-                    <a>
-                    <div class="mask rgba-white-slight"></div>
-                    </a>
+function RenderCards({ food }) {
+    if (food) {
+    return (
+        <div key={food.id} className="card mx-2 my-3 col-sm-5 col-md-3">
+                <div className="view overlay">
+                    <img className="card-img-top card-images" src={food.strMealThumb} alt={food.strMeal} />
+                   
                 </div>
-                <div class="card-body elegant-color white-text rounded-bottom">
-                    <a class="activator waves-effect mr-4"><i class="fas fa-share-alt white-text"></i></a>
-                    <h4 class="card-title">Card title</h4>
-                    <hr class="hr-light"/>
-                    <p class="card-text white-text mb-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#!" class="white-text d-flex justify-content-end"><h5>Read more <i class="fas fa-angle-double-right"></i></h5></a>
+                <div className="card-body elegant-color white-text rounded-bottom">
+                    <h4 className="card-title">{food.strMeal}</h4>
+                    <hr className="hr-light"/>
+                    <p className="card-text white-text mb-4">{food.strArea}</p>
                 </div>
             </div>
+    )
+     } else {
+         return <div></div>
+     }
+}
+
+
+class RecipeCards extends Component {
+    constructor(props) {
+        super(props)
+    }
+
+    render() {
+        const cards = this.props.food.map(item => {
+            return (
+                <React.Fragment key={item.id}>
+                    <RenderCards food={item} />
+                </React.Fragment>
+            )
+        });
+        return (
+            <React.Fragment>
+                {cards}
+            </React.Fragment>
         )
     }
 }
