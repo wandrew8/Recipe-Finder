@@ -7,8 +7,11 @@ function RenderCategories(props) {
             <div key={props.category.id} className="card category-card col-sm-5 col-md-3">
             <Link to={`/category/${props.category.type}`} href="#">
 
-            <div className="view overlay">
-                <img className="card-img-top card-images" src={props.category.strCategoryThumb} alt={props.category.type} />
+
+            <div className="view">
+                <img className="card-images" src={props.category.strCategoryThumb} alt={props.category.type} />
+                <div class="mask flex-center rgba-black-strong">
+            </div>
             </div>
             <div className="card-body elegant-color white-text rounded-bottom">
                 <h4 className="card-title">{props.category.strCategory}</h4>

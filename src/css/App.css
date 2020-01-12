@@ -1,6 +1,10 @@
+/* BODY STYLING */
+
 .App {
   text-align: center;
 }
+
+/* FOOTER STYLING */
 
 .image-links {
   max-width: 100px;
@@ -19,9 +23,13 @@
   color: #fff;
 }
 
+/* SAVED RECIPES PAGE */
+
 .saved-recipes {
   min-height: 80vh;
 }
+
+/* RECIPE CARDS */
 
 .card-images {
   width: 100%;
@@ -33,6 +41,8 @@
 .card {
   padding: 0;
 }
+
+/* MODAL STYLING */
 
 .modal .image {
   width: 100%;
@@ -97,6 +107,19 @@
   background: -webkit-gradient(linear, left top, left bottom, from(90deg, rgba(26, 188, 156, 0.5)), to(rgba(52, 152, 219, 0.6)));
   background: linear-gradient(90deg, rgba(26, 188, 156, 0.5) 0%, rgba(52, 152, 219, 0.6) 100%);
 }
+
+/* CATEGORY CARDS STYLING */
+
+.category-card .card-image {
+  max-width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: solid black 2px;
+  border-radius: 50%;
+  top: 50px;
+}
+
+/* MEDIA QUERIES */
 
 /* Small devices (landscape phones, 576px and up) */
 
