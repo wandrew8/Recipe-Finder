@@ -34,6 +34,49 @@
   padding: 0;
 }
 
+.modal .image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.modal li {
+  text-align: left;
+  list-style-type: none;
+}
+
+.modal .close {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+
+.modal h1 {
+  color: #fff;
+}
+
+.modal .modal-main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal .youtube-container {
+  display: flex;
+  align-items: center;
+}
+
+.modal .youtube {
+  margin: -100px 0px 0px 2rem;
+}
+
+.modal .gradient-mask {
+  background: -webkit-linear-gradient(90deg, rgba(26, 188, 156, 0.5) 0%, rgba(52, 152, 219, 0.6) 100%);
+  background: -o-linear-gradient(90deg, rgba(26, 188, 156, 0.5) 0%, rgba(52, 152, 219, 0.6) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(90deg, rgba(26, 188, 156, 0.5)), to(rgba(52, 152, 219, 0.6)));
+  background: linear-gradient(90deg, rgba(26, 188, 156, 0.5) 0%, rgba(52, 152, 219, 0.6) 100%);
+}
+
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {}
