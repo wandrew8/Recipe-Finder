@@ -67,7 +67,28 @@
 }
 
 .modal .youtube {
-  margin: -100px 0px 0px 2rem;
+  margin: -100px 0px 0px 0rem;
+  width: 100%;
+  text-align: left;
+  padding: 1rem 0rem 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.modal .heart {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s;
+  color: rgba(231, 76, 60, 0.5);
+}
+
+.modal .heart2 {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  transform: scale(1.2);
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s;
+  color: rgba(231, 76, 60, 1);
 }
 
 .modal .gradient-mask {
