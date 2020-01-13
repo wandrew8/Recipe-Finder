@@ -25,9 +25,7 @@ function RenderCategories(props) {
 
 
 class CategoryCard extends React.Component {
-    constructor(props) {
-        super(props)
-    }
+    
     render() {
     const cards = this.props.category.map(categoryName => {
         return(

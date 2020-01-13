@@ -10,38 +10,38 @@ import CATEGORIES from './categories';
 import './css/App.css';
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      categories: CATEGORIES,
-      food: FOOD,
+    constructor(props) {
+      super(props)
+      this.state = {
+        categories: CATEGORIES,
+        food: FOOD,
+      }
     }
-  }
-  
-  render() {
-    const CategoryType = ({ match }) => {
-      return (
-        <CategoryPage 
-        food={this.state.food.filter(foodItem => foodItem.type === match.params.category)}
-        category={this.state.categories.filter(category => category.type === match.params.category)} 
-        />
-      )
-    }
+    
+    render() {
+      const CategoryType = ({ match }) => {
+        return (
+          <CategoryPage 
+          food={this.state.food.filter(foodItem => foodItem.type === match.params.category)}
+          category={this.state.categories.filter(category => category.type === match.params.category)} 
+          />
+        )
+      }
 
-  return (
-    <Router>
-      <div className="App">
-      <NavbarComponent categories={this.state.categories} />
-      <Switch>
-        <Route path="/home" render={() => <HomePage category={this.state.categories}/>} />
-        <Route path="/category/:category" component={CategoryType} />} />
-        <Route exact path="/saved" component={SavedPage} />
-        <Redirect to="/home" />
-      </Switch>
-      <Footer />
-      </div>
-    </Router>
-  );
+      return (
+        <Router>
+          <div className="App">
+          <NavbarComponent categories={this.state.categories} />
+          <Switch>
+            <Route path="/home" render={() => <HomePage category={this.state.categories}/>} />
+            <Route path="/category/:category" component={CategoryType} />} />
+            <Route exact path="/saved" component={SavedPage} />
+            <Redirect to="/home" />
+          </Switch>
+          <Footer />
+          </div>
+        </Router>
+      );
   }
 }
 

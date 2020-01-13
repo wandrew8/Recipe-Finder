@@ -7,7 +7,7 @@ export class CategoryPage extends Component {
     render() {
         return (
             <React.Fragment>
-               <Header category={this.props.category} /> 
+               <Header food={this.props.food} category={this.props.category} /> 
                <div className="container">
                    <div className="row justify-content-center">
                        <RecipeCards food={this.props.food}/>

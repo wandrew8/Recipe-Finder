@@ -22,7 +22,7 @@ class RecipeModal extends React.Component {
         }
     return (
         <div>
-            <div className="modal fade" id="recipeModal" tabIndex="-1" role="dialog" aria-labelledby="recipeModal"
+            <div className="modal fade" id={`meal${this.props.food.id}`} tabIndex="-1" role="dialog" aria-labelledby="recipeModal"
             aria-hidden="true">
             <div className="modal-dialog modal-lg" role="document">
                 <div className="modal-content">
@@ -34,7 +34,7 @@ class RecipeModal extends React.Component {
                     <div>
                         <div className="view">
                             <img className="image" src={this.props.food.strMealThumb} alt={this.props.food.strMeal} />
-                            <div class="mask gradient-mask flex-center">
+                            <div className="mask gradient-mask flex-center">
                                 <h1>{this.props.food.strMeal}</h1>
                             </div>
                         </div>
@@ -47,7 +47,7 @@ class RecipeModal extends React.Component {
                             <a onClick={()=> handleClick(this.props.food.idMeal)} className="heart" type="button" data-toggle="modal" data-target="#addRecipe">{this.state.saved.includes(this.props.food.idMeal) ? <i className="heart2 fas fa-heart fa-2x"></i> : <i className="far heart fa-heart fa-2x"></i>}</a>
                                 <img className="modal-main-image" src={this.props.food.strMealThumb} alt={this.props.food.strMeal} />
                                 <div className="youtube-container">
-                                    <a className="youtube" target="_blank" href={this.props.food.strYoutube}><span><i class="fab fa-youtube fa-3x"></i></span>
+                                    <a className="youtube" target="_blank" href={this.props.food.strYoutube}><span><i className="fab fa-youtube fa-3x"></i></span>
                                     <p>Watch on YouTube</p></a>
                                 </div>
                             </div>
