@@ -34,7 +34,7 @@ class RecipeModal extends React.Component {
                     <div>
                         <div className="view">
                             <img className="image" src={this.props.food.strMealThumb} alt={this.props.food.strMeal} />
-                            <div className="mask gradient-mask flex-center">
+                            <div className="mask rgba-stylish-strong flex-center">
                                 <h1>{this.props.food.strMeal}</h1>
                             </div>
                         </div>

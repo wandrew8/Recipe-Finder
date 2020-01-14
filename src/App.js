@@ -35,7 +35,7 @@ class App extends Component {
           <Switch>
             <Route path="/home" render={() => <HomePage category={this.state.categories}/>} />
             <Route path="/category/:category" component={CategoryType} />} />
-            <Route exact path="/saved" component={SavedPage} />
+            <Route exact path="/saved" render={() => <SavedPage food={this.state.food} category={this.state.categories}/>} />
             <Redirect to="/home" />
           </Switch>
           <Footer />

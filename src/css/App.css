@@ -1,5 +1,16 @@
+/* GENERAL STYLING */
+
 .App {
   text-align: center;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Barlow', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'IM Fell Great Primer SC', serif;
 }
 
 .image-links {
@@ -10,6 +21,38 @@
   border-radius: 50%;
 }
 
+/* ------------ HOME PAGE ------------- */
+
+/* ------------- SAVED RECIPES PAGE ------------- */
+
+.saved-recipes {
+  min-height: 80vh;
+}
+
+/* ------------- RECIPES PAGE --------------- */
+
+/* HEADER */
+
+.jumbotron img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  padding: 0;
+  margin: 0;
+}
+
+.jumbotron h1 {
+  padding: 0rem 4rem;
+  font-size: 2rem;
+}
+
+.jumbotron {
+  padding: 0;
+  margin: 0;
+}
+
+/* FOOTER */
+
 .site-footer {
   background-color: #007bff;
   padding: 20px 0;
@@ -19,9 +62,7 @@
   color: #fff;
 }
 
-.saved-recipes {
-  min-height: 80vh;
-}
+/* RECIPE CARDS */
 
 .card-images {
   width: 100%;
@@ -33,6 +74,8 @@
 .card {
   padding: 0;
 }
+
+/* RECIPE MODALS */
 
 .modal .image {
   width: 100%;
@@ -98,6 +141,8 @@
   background: linear-gradient(90deg, rgba(26, 188, 156, 0.5) 0%, rgba(52, 152, 219, 0.6) 100%);
 }
 
+/* MEDIA QUERIES */
+
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {}
@@ -108,20 +153,15 @@
 
 /* Large devices (desktops, 992px and up) */
 
-@media (min-width: 992px) {
-  .header-image {
-    position: absolute;
-    height: 200px;
-    width: 200px;
-    border: solid black 2px;
-    border-radius: 50%;
-    object-fit: cover;
-    top: 2rem;
-    right: 3rem;
-    background: white;
-  }
-}
+@media (min-width: 992px) {}
 
 /* Extra large devices (large desktops, 1200px and up) */
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  .jumbotron h1 {
+    font-size: 4rem;
+  }
+  .jumbotron p {
+    font-size: 1.2rem;
+  }
+}

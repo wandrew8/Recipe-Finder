@@ -2421,7 +2421,7 @@ const FOOD = [
                         },
                         {
                             id: 8,
-                            type: "beef",
+                            type: "fish",
                             "idMeal": "52878",
                             "strMeal": "Beef and Oyster pie",
                             "strDrinkAlternate": null,
