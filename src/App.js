@@ -1,5 +1,6 @@
 import React , { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
+import { ParallaxProvider } from 'react-scroll-parallax';
 import NavbarComponent from './components/NavbarComponent';
 import HomePage from './components/Homepage';
 import SavedPage from './components/SavedPage';
@@ -40,16 +41,18 @@ class App extends Component {
 
       return (
         <Router>
-          <div className="App">
-          <NavbarComponent categories={this.state.categories} />
-          <Switch>
-            <Route path="/home" render={() => <HomePage category={this.state.categories}/>} />
-            <Route path="/category/:category" component={CategoryType} />} />
-            <Route exact path="/saved" render={() => <SavedPage saved={this.state.saved} food={this.state.food} category={this.state.categories}/>} />
-            <Redirect to="/home" />
-          </Switch>
-          <Footer />
-          </div>
+            <div className="App">
+            <NavbarComponent categories={this.state.categories} />
+          <ParallaxProvider>
+            <Switch>
+              <Route path="/home" render={() => <HomePage category={this.state.categories}/>} />
+              <Route path="/category/:category" component={CategoryType} />} />
+              <Route exact path="/saved" render={() => <SavedPage saved={this.state.saved} food={this.state.food} category={this.state.categories}/>} />
+              <Redirect to="/home" />
+            </Switch>
+          </ParallaxProvider>
+            <Footer />
+            </div>
         </Router>
       );
   }

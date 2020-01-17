@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { ParallaxBanner } from 'react-scroll-parallax';
 
 function findRecipes(foodType, food) {
     const recipeArray = food.map(item => item.strMeal)
@@ -8,10 +9,22 @@ function findRecipes(foodType, food) {
 }
 
 class Header extends Component {
+    constructor(props) {
+        super(props)
+    }
     render() {
         return (
-                <div className="jumbotron text-center view">
-                    <img className="header-image" src={this.props.category[0].thumb2} alt={this.props.category[0].strCategory} />
+                <ParallaxBanner className="jumbotron text-center view"
+                    layers={[
+                            {
+                                image: `${this.props.category[0].thumb2}`,
+                                amount: 0.8,
+                            },
+                        ]}
+                    style={{
+                            height: '300px',
+                        }}>
+                    {/* <img className="header-image" src={this.props.category[0].thumb2} alt={this.props.category[0].strCategory} /> */}
                     <div className="mask text-white flex-center rgba-stylish-strong">
                     <div className="container">
                         <div className="row">
@@ -24,7 +37,7 @@ class Header extends Component {
                         </div>
                     </div>
                     </div>
-                </div>
+                </ParallaxBanner>
         )
     }
 }

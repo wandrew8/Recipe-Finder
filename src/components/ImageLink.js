@@ -7,7 +7,7 @@ function RenderImages({category}) {
         return (
             <div className="col-6 col-sm-4 col-md-2">
                 <Link to={`/category/${categoryType.type}`} href="#">
-                    <img className="image-links" src={categoryType.strCategoryThumb} alt={categoryType.type} />
+                    <img className="image-links" src={categoryType.thumb2} alt={categoryType.type} />
                     <p>{categoryType.strCategory}</p>
                 </Link>
             </div>

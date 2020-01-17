@@ -6,7 +6,7 @@ class RenderCards extends Component {
     render() {
         return (
             <React.Fragment>
-            <div  key={this.props.food.id} className="card mx-2 my-3 col-sm-5 col-md-3">
+            <div  key={this.props.food.id} className="card recipe-card mx-2 my-3 col-sm-5 col-md-3">
                 <a onClick={() => this.props.handleClick(this.props.food.idMeal)} type="button" data-toggle="modal" data-target={`#meal${this.props.food.id}`}>
                 <div className="view overlay">
                     <img className="card-img-top card-images" src={this.props.food.strMealThumb} alt={this.props.food.strMeal} />

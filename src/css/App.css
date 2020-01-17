@@ -13,16 +13,6 @@ h1, h2, h3, h4, h5 {
   font-family: 'IM Fell Great Primer SC', serif;
 }
 
-.image-links {
-  max-width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border: solid black 2px;
-  border-radius: 50%;
-}
-
-/* ------------ HOME PAGE ------------- */
-
 /* ------------- SAVED RECIPES PAGE ------------- */
 
 .saved-recipes {
@@ -33,7 +23,7 @@ h1, h2, h3, h4, h5 {
 
 /* HEADER */
 
-.jumbotron img {
+.header-image {
   height: 300px;
   width: 100%;
   object-fit: cover;
@@ -49,6 +39,34 @@ h1, h2, h3, h4, h5 {
 .jumbotron {
   padding: 0;
   margin: 0;
+}
+
+/* ------------ HOME PAGE ------------- */
+
+.image-links {
+  width: 7rem;
+  height: 7rem;
+  object-fit: cover;
+  border: solid black 2px;
+  border-radius: 50%;
+}
+
+.category-card {
+  padding: 0;
+  background-color: #2e2e2e;
+  height: 400px;
+  overflow: hidden;
+}
+
+.category-card img {
+  background-color: #fff;
+  padding: 0.5rem;
+  margin: 0 auto;
+}
+
+.category-card p {
+  overflow: auto;
+  height: 150px;
 }
 
 /* FOOTER */
@@ -71,18 +89,12 @@ h1, h2, h3, h4, h5 {
   margin: 0 auto;
 }
 
-.card {
+.recipe-card {
   padding: 0;
   background-color: #2e2e2e;
 }
 
 /* RECIPE MODALS */
-
-.modal {
-  width: 95vw;
-  max-width: 1000px;
-  margin: 0;
-}
 
 .modal .image {
   width: 100%;
@@ -127,6 +139,7 @@ h1, h2, h3, h4, h5 {
 .modal .youtube-container {
   display: flex;
   align-items: center;
+  transition: ease-in 0.3s;
 }
 
 .modal .youtube {
@@ -135,6 +148,13 @@ h1, h2, h3, h4, h5 {
   text-align: left;
   padding: 1rem 0rem 1rem 2rem;
   background-color: rgba(255, 255, 255, 0.7);
+  transition: ease-in 0.3s;
+}
+
+.youtube-container:hover {
+  display: flex;
+  text-align: center;
+  transform: scale(1.05);
 }
 
 .modal .heart {
@@ -165,19 +185,38 @@ h1, h2, h3, h4, h5 {
 
 /* Small devices (landscape phones, 576px and up) */
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+  .image-links {
+    width: 9rem;
+    height: 9rem;
+  }
+}
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  .image-links {
+    width: 5rem;
+    height: 5rem;
+  }
+}
 
 /* Large devices (desktops, 992px and up) */
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+  .image-links {
+    width: 8rem;
+    height: 8rem;
+  }
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
+  .image-links {
+    width: 10rem;
+    height: 10rem;
+  }
   .jumbotron h1 {
     font-size: 4rem;
   }

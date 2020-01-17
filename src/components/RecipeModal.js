@@ -59,7 +59,7 @@ class RecipeModal extends React.Component {
                     <div className="container">
                         <div className="row my-4">
                             <div className="col-md-6">
-                            <a onClick={()=> handleClick(this.props.food.idMeal)} className="heart" type="button" data-toggle="modal" data-target="#addRecipe">{this.state.saved.includes(this.props.food.idMeal) ? <i className="heart2 fas fa-heart fa-2x"></i> : <i className="far heart fa-heart fa-2x"></i>}</a>
+                            <a onClick={()=> handleClick(this.props.food.idMeal)} href="#" className="heart" type="button" data-toggle="modal" data-target="#addRecipe">{this.state.saved.includes(this.props.food.idMeal) ? <i className="heart2 fas fa-heart fa-2x"></i> : <i className="far heart fa-heart fa-2x"></i>}</a>
                                 <img className="modal-main-image" src={this.props.food.strMealThumb} alt={this.props.food.strMeal} />
                                 <div className="youtube-container">
                                     <a className="youtube" target="_blank" href={this.props.food.strYoutube}><span><i className="fab fa-youtube fa-3x"></i></span>
@@ -102,7 +102,7 @@ class RecipeModal extends React.Component {
                     </div>
                     </div>
                     <div className="modal-footer">
-                        <button type="button" className="btn btn-primary" data-dismiss="modal">Close</button>
+                        <button type="button" className="btn btn-outline-primary waves-effect" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
