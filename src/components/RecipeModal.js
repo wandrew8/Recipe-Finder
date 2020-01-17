@@ -8,6 +8,7 @@ class RecipeModal extends React.Component {
             saved: [],
         }
     }
+
     render() {
         const handleClick = (id) => {
             if (this.state.saved.includes(id)) {
@@ -20,6 +21,20 @@ class RecipeModal extends React.Component {
 ,            })
         }
         }
+    
+        const formatInstructions = text => {
+            const instructionsArray = text.split(/\r\n/);
+            const instructions = instructionsArray.map(item => {
+                return(
+                <div className="instructions-list" key={item}>
+                    {item}
+                    <br />
+                </div>
+                )
+            })
+                return instructions;
+            }
+        
     return (
         <div>
             <div className="modal fade" id={`meal${this.props.food.id}`} tabIndex="-1" role="dialog" aria-labelledby="recipeModal"
@@ -82,7 +97,9 @@ class RecipeModal extends React.Component {
                         
                     </div>
                     <h2 className="text-left px-5">Instructions</h2>
-                        {this.props.food.strInstructions}
+                    <div className="text-left">
+                        {formatInstructions(this.props.food.strInstructions)}
+                    </div>
                     </div>
                     <div className="modal-footer">
                         <button type="button" className="btn btn-primary" data-dismiss="modal">Close</button>

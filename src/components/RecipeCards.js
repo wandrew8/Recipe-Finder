@@ -18,7 +18,7 @@ class RenderCards extends Component {
                 </div>
                 </a>
             </div>
-            <RecipeModal food={this.props.food} />
+            <RecipeModal addRecipe={() => this.props.addRecipe} food={this.props.food} />
         </React.Fragment>
         )
     }

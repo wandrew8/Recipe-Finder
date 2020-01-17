@@ -73,9 +73,16 @@ h1, h2, h3, h4, h5 {
 
 .card {
   padding: 0;
+  background-color: #2e2e2e;
 }
 
 /* RECIPE MODALS */
+
+.modal {
+  width: 95vw;
+  max-width: 1000px;
+  margin: 0;
+}
 
 .modal .image {
   width: 100%;
@@ -86,6 +93,19 @@ h1, h2, h3, h4, h5 {
 .modal li {
   text-align: left;
   list-style-type: none;
+}
+
+.modal br {
+  margin-bottom: 0.5rem;
+}
+
+.instructions-list {
+  line-height: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.instructions-list::first-line {
+  font-weight: bold;
 }
 
 .modal .close {
