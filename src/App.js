@@ -45,7 +45,7 @@ class App extends Component {
             <NavbarComponent categories={this.state.categories} />
           <ParallaxProvider>
             <Switch>
-              <Route path="/home" render={() => <HomePage category={this.state.categories}/>} />
+              <Route path="/home" render={() => <HomePage food={this.state.food} category={this.state.categories}/>} />
               <Route path="/category/:category" component={CategoryType} />} />
               <Route exact path="/saved" render={() => <SavedPage saved={this.state.saved} food={this.state.food} category={this.state.categories}/>} />
               <Redirect to="/home" />

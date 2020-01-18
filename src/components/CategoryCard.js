@@ -5,17 +5,18 @@ function RenderCategories(props) {
     if(props.category) {
     return (
             <div key={props.category.id} className="card category-card mx-2 my-3 col-sm-5 col-md-3">
-                <Link to={`/category/${props.category.type}`} href="#">
+                {/* <Link to={`/category/${props.category.type}`} href="#"> */}
 
                 <div className="view overlay">
-                    <img className="card-img-top card-images" src={props.category.strCategoryThumb} alt={props.category.type} />
+                    <img className="card-img-top card-images" src={props.category.thumb2} alt={props.category.type} />
+                    <div className="card-body elegant-color white-text rounded-bottom">
+                        <h4 className="card-title">{props.category.strCategory}</h4>
+                        <hr className="hr-light"/>
+                        <p className="card-text white-text mb-4">Search through delicious {props.category.type} dishes like: {props.category.options[0]}, {props.category.options[1]}, and {props.category.options[2]}!</p>
+                        <Link to={`category/${props.category.type}`}><button type="button" class="btn btn-rounded blue-gradient waves-effect">Visit</button></Link>
+                    </div>
                 </div>
-                <div className="card-body elegant-color white-text rounded-bottom">
-                    <h4 className="card-title">{props.category.strCategory}</h4>
-                    <hr className="hr-light"/>
-                    <p className="card-text white-text mb-4">{props.category.strCategoryDescription}</p>
-                </div>
-                </Link>
+                {/* </Link> */}
             </div>
     )
     } else {

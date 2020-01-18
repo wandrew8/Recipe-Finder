@@ -54,7 +54,7 @@ class RecipeModal extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <hr />
+                    <hr className="horizon-rule" />
                     
                     <div className="container">
                         <div className="row my-4">
@@ -100,9 +100,10 @@ class RecipeModal extends React.Component {
                     <div className="text-left">
                         {formatInstructions(this.props.food.strInstructions)}
                     </div>
+                    <div>
+                        <hr className="horizon-rule2 mt-4" />
+                        <button type="button" className="btn btn-rounded blue-gradient waves-effect" data-dismiss="modal">Close</button>
                     </div>
-                    <div className="modal-footer">
-                        <button type="button" className="btn btn-outline-primary waves-effect" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>

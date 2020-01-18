@@ -18,13 +18,12 @@ class Header extends Component {
                     layers={[
                             {
                                 image: `${this.props.category[0].thumb2}`,
-                                amount: 0.8,
+                                amount: 1,
                             },
                         ]}
                     style={{
                             height: '300px',
                         }}>
-                    {/* <img className="header-image" src={this.props.category[0].thumb2} alt={this.props.category[0].strCategory} /> */}
                     <div className="mask text-white flex-center rgba-stylish-strong">
                     <div className="container">
                         <div className="row">

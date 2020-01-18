@@ -5,7 +5,7 @@ export class NavbarComponent extends Component {
     
     render() {
         return (
-            <nav className="navbar navbar-expand-lg navbar-dark primary-color">
+            <nav className="navbar navbar-expand-lg navbar-dark blue-gradient">
             <Link className="navbar-brand" href="#" to="/home"><p><strong>Recipe<span><i className="mx-1 fas fa-wave-square"></i></span>Finder</strong></p></Link>
           
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
