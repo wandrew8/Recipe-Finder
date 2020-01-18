@@ -18,7 +18,7 @@ class RenderCards extends Component {
                 </div>
                 </a>
             </div>
-            <RecipeModal addRecipe={() => this.props.addRecipe} food={this.props.food} />
+            <RecipeModal addRecipe={this.props.addRecipe} food={this.props.food} />
         </React.Fragment>
         )
     }
@@ -46,7 +46,7 @@ class RecipeCards extends Component {
         const cards = this.props.food.map(item => {
             return (
                 <React.Fragment key={item.id}>
-                    <RenderCards id={this.state.id} handleClick={this.handleClick} food={item} />
+                    <RenderCards addRecipe={this.props.addRecipe} id={this.state.id} handleClick={this.handleClick} food={item} />
                 </React.Fragment>
             )
         });

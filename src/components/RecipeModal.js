@@ -1,32 +1,31 @@
 import React from 'react';
+import { Button } from 'reactstrap';
 
 
 class RecipeModal extends React.Component {
     constructor(props) {
-        super(props)
-        this.state = {
-            saved: [],
-        }
+        super(props) 
+        this.state = ({
+            saved: []
+        })
     }
-
     render() {
-        const handleClick = (id) => {
-            if (this.state.saved.includes(id)) {
-                this.setState({
-                saved: [],
-            })
-        } else {
-            this.setState({
-                saved: [id]
-,            })
-        }
-        }
+//         const handleClick = (id) => {
+//             if (this.state.saved.includes(id)) {
+//                 console.log('this recipe is already saved')
+//         } else {
+//             this.setState({
+//                 saved: [...id]
+// ,            })
+//         }
+//         }
     
         const formatInstructions = text => {
             const instructionsArray = text.split(/\r\n/);
+            let i = 0;
             const instructions = instructionsArray.map(item => {
                 return(
-                <div className="instructions-list" key={item}>
+                <div className="instructions-list" key={i++}>
                     {item}
                     <br />
                 </div>
@@ -37,6 +36,9 @@ class RecipeModal extends React.Component {
         
     return (
         <div>
+        <Button onClick={() => this.props.addRecipe(4)}>
+            Test
+        </Button>
             <div className="modal fade" id={`meal${this.props.food.id}`} tabIndex="-1" role="dialog" aria-labelledby="recipeModal"
             aria-hidden="true">
             <div className="modal-dialog modal-lg" role="document">
@@ -59,7 +61,9 @@ class RecipeModal extends React.Component {
                     <div className="container">
                         <div className="row my-4">
                             <div className="col-md-6">
-                            <a onClick={()=> handleClick(this.props.food.idMeal)} href="#" className="heart" type="button" data-toggle="modal" data-target="#addRecipe">{this.state.saved.includes(this.props.food.idMeal) ? <i className="heart2 fas fa-heart fa-2x"></i> : <i className="far heart fa-heart fa-2x"></i>}</a>
+                            <a onClick={()=> this.props.addRecipe(this.props.food.idMeal)} href="#" className="heart" type="button" data-toggle="modal" data-target="#addRecipe">
+                            {this.state.saved.includes(this.props.food.idMeal) ? <i className="heart2 fas fa-heart fa-2x"></i> : <i className="far heart fa-heart fa-2x"></i>}
+                            </a>
                                 <img className="modal-main-image" src={this.props.food.strMealThumb} alt={this.props.food.strMeal} />
                                 <div className="youtube-container">
                                     <a className="youtube" target="_blank" href={this.props.food.strYoutube}><span><i className="fab fa-youtube fa-3x"></i></span>

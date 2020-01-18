@@ -18,13 +18,12 @@ class App extends Component {
         food: FOOD,
         saved: [],
       }
+      this.addRecipe = this.addRecipe.bind(this);
     }
 
-    addRecipe = event => {
-      console.log(event)
-      const recipes = { ...this.state.saved };
-      this.setState({ saved: recipes })
+    addRecipe(id) {
       console.log(this.state.saved)
+      this.setState({ saved: [...this.state.saved, id] })
 
   }
     
@@ -34,7 +33,7 @@ class App extends Component {
           <CategoryPage 
           food={this.state.food.filter(foodItem => foodItem.type === match.params.category)}
           category={this.state.categories.filter(category => category.type === match.params.category)} 
-          addRecipe={() => this.state.addRecipe}
+          addRecipe={this.addRecipe}
           />
         )
       }
