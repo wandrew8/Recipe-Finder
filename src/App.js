@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-d
 import { ParallaxProvider } from 'react-scroll-parallax';
 import NavbarComponent from './components/NavbarComponent';
 import HomePage from './components/Homepage';
-import SavedPage from './components/SavedPage';
+import AllPage from './components/AllPage';
 import CategoryPage from './components/CategoryPage'
 import Footer from './components/Footer';
 import FOOD from './food';
@@ -22,8 +22,8 @@ class App extends Component {
     }
 
     addRecipe(id) {
-      console.log(this.state.saved)
       this.setState({ saved: [...this.state.saved, id] })
+      console.log(this.state.saved)
 
   }
     
@@ -46,7 +46,7 @@ class App extends Component {
             <Switch>
               <Route path="/home" render={() => <HomePage food={this.state.food} category={this.state.categories}/>} />
               <Route path="/category/:category" component={CategoryType} />} />
-              <Route exact path="/saved" render={() => <SavedPage saved={this.state.saved} food={this.state.food} category={this.state.categories}/>} />
+              <Route exact path="/all" render={() => <AllPage saved={this.state.saved} food={this.state.food} category={this.state.categories}/>} />
               <Redirect to="/home" />
             </Switch>
           </ParallaxProvider>

@@ -1,3 +1,4 @@
+/* eslint-disable no-multi-str */
 const FOOD = [
    {
     id: 0,
@@ -3630,8 +3631,8 @@ const FOOD = [
                             "dateModified": null
                             },
                             {
-                                id: 29,
-                    type: "desserts",
+                            id: 29,
+                            type: "desserts",
                             "idMeal": "52988",
                             "strMeal": "Classic Christmas pudding",
                             "strDrinkAlternate": null,

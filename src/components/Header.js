@@ -9,16 +9,13 @@ function findRecipes(foodType, food) {
 }
 
 class Header extends Component {
-    constructor(props) {
-        super(props)
-    }
     render() {
         return (
                 <ParallaxBanner className="jumbotron text-center view"
                     layers={[
                             {
-                                image: `${this.props.category[0].thumb2}`,
-                                amount: 1,
+                            image: `${this.props.category[0].thumb2}`,
+                            amount: 1,
                             },
                         ]}
                     style={{

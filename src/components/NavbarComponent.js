@@ -22,7 +22,7 @@ export class NavbarComponent extends Component {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" href="#" to="/saved" >Saved Recipes</Link>
+                  <Link className="nav-link" href="#" to="/all" >All Recipes</Link>
                 </li>
           
                 <li className="nav-item dropdown">

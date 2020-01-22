@@ -5,8 +5,6 @@ function RenderCategories(props) {
     if(props.category) {
     return (
             <div key={props.category.id} className="card category-card mx-2 my-3 col-sm-5 col-md-3">
-                {/* <Link to={`/category/${props.category.type}`} href="#"> */}
-
                 <div className="view overlay">
                     <img className="card-img-top card-images" src={props.category.thumb2} alt={props.category.type} />
                     <div className="card-body elegant-color white-text rounded-bottom">
@@ -16,7 +14,6 @@ function RenderCategories(props) {
                         <Link to={`category/${props.category.type}`}><button type="button" class="btn btn-rounded blue-gradient waves-effect">Visit</button></Link>
                     </div>
                 </div>
-                {/* </Link> */}
             </div>
     )
     } else {
