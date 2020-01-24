@@ -1,6 +1,6 @@
 # Recipe-Finder
 
-A react application that uses data from TheMealDB api to allow users to search recipes based on the food category. For a stretch I hope to include the ability for users to add and delete recipes in their personal 'saved recipes' page. This will be achieved using local storage.
+A react application that uses data from TheMealDB api to allow users to search recipes based on the food category. 
 
 ## Technologies Used 
 
@@ -9,11 +9,18 @@ A react application that uses data from TheMealDB api to allow users to search r
 * CSS
 * Bootstrap and MDBootstrap
 * react-scroll-parallax NPM for parallax effects
+* React-transition-group and react-animation-components for animation effects
 * TheMealDB API
 * Unplash.com for open-sourced images
+* AdobeXd
 
 ## Wireframe and UI Design
-This project is still in the initial stages of development. Here are some preliminary wireframes of what the final project should look like. Wireframes were built using AdobeXd. 
+This application utilizes subtle animation effects to create for a better UI / UX through the use of multiple animation packages. The website is also mobile responsive through the use of bootstrap with the addition of MDBootstrap.
+
+![Desktop version](./desktopImage.gif)
+![Mobile version](./mobile.gif)
+
+THere are some preliminary wireframes from the initial development stage. Wireframes were built using AdobeXd. 
 
 ![Wireframe Home Page](https://res.cloudinary.com/dcokaa0ia/image/upload/v1578684863/olafgo/category_nlbo3f.png)
 
