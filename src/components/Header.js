@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ParallaxBanner } from 'react-scroll-parallax';
-import { FadeTransform, Fade } from 'react-animation-components';
+import { FadeTransform } from 'react-animation-components';
  
 function findRecipes(foodType, food) {
     const recipeArray = food.map(item => item.strMeal)

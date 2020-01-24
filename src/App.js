@@ -1,7 +1,6 @@
 import React , { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import { ParallaxProvider } from 'react-scroll-parallax';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import NavbarComponent from './components/NavbarComponent';
 import HomePage from './components/Homepage';
 import AllPage from './components/AllPage';
