@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
 import RecipeModal from './RecipeModal';
+import { FadeTransform, Fade } from 'react-animation-components';
+
 
 class RenderCards extends Component {
         
     render() {
         return (
             <React.Fragment>
-                <div  key={this.props.food.id} className="card recipe-card mx-2 my-3 col-sm-5 col-md-3">
+                <div className="card recipe-card mx-2 my-3 col-sm-5 col-md-3">
                     <a type="button" data-toggle="modal" data-target={`#meal${this.props.food.id}`}>
+                        <Fade in>
                         <div className="view overlay">
+
                             <img className="card-img-top card-images" src={this.props.food.strMealThumb} alt={this.props.food.strMeal} />
                         </div>
+                        </Fade>
                         <div className="card-body elegant-color white-text rounded-bottom">
                             <h4 className="card-title">{this.props.food.strMeal}</h4>
                             <hr className="hr-light"/>
@@ -28,19 +33,19 @@ class RecipeCards extends Component {
     constructor(props) {
         super(props)
         this.state = {
-           id: null, 
+            id: null, 
         }
     }
-
+    
     handleClick= (id) => {
         console.log(id)
         if (id) {
-        this.setState ({
-            id: id,
-        })
+            this.setState ({
+                id: id,
+            })
+        }
     }
-    }
-
+    
     render() {
         const cards = this.props.food.map(item => {
             return (

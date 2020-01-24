@@ -11,7 +11,7 @@ function RenderCategories(props) {
                         <h4 className="card-title">{props.category.strCategory}</h4>
                         <hr className="hr-light"/>
                         <p className="card-text white-text mb-4">Search through delicious {props.category.type} dishes like: {props.category.options[0]}, {props.category.options[1]}, and {props.category.options[2]}!</p>
-                        <Link to={`category/${props.category.type}`}><button type="button" class="btn btn-rounded blue-gradient waves-effect">Visit</button></Link>
+                        <Link to={`category/${props.category.type}`}><button type="button" className="btn btn-rounded blue-gradient waves-effect">Visit</button></Link>
                     </div>
                 </div>
             </div>
@@ -27,7 +27,7 @@ class CategoryCard extends React.Component {
     render() {
     const cards = this.props.category.map(categoryName => {
         return(
-            <React.Fragment key={categoryName.id}>
+            <React.Fragment>
                 <RenderCategories category={categoryName} />
             </React.Fragment>
         )
